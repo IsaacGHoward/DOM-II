@@ -62,4 +62,10 @@ document.addEventListener("keyup", (e) => {
     }
 })
 
+//drag
+images.forEach((image) => {
+    image.addEventListener("dragstart", (e) => {
+        alert("STOP TRYING TO MESS UP THE LAYOUT!");
+    })
+})
 
