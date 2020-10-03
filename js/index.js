@@ -69,3 +69,7 @@ images.forEach((image) => {
     })
 })
 
+//copy 
+document.addEventListener("copy", (e) => {
+    alert("STOP STEALING OUR AUTO GENERATED TEXT!");
+})
