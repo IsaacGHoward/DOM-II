@@ -44,3 +44,22 @@ document.addEventListener("wheel", (e) => {
     timesScrolled++;
     newEl.innerHTML = `Times Scrolled : ${timesScrolled}`
 })
+
+//offline event listener
+window.addEventListener("offline", (e) =>{
+    alert("You are now offline");
+})
+
+//keydown and keyup
+document.addEventListener("keydown", (e) => {
+    if(e.code === "KeyB"){
+        document.body.style.fontWeight = "bold";
+    }
+})
+document.addEventListener("keyup", (e) => {
+    if(e.code === "KeyB"){
+        document.body.style.fontWeight = "normal";
+    }
+})
+
+
