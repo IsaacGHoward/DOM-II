@@ -79,3 +79,12 @@ window.addEventListener("resize", (e) => {
     if(window.innerWidth < 400)
         alert("MAKE THE WEBSITE BIGGER, THIS IS TOO SMALL!")
 })
+
+//prevent Default
+const navlinks = document.querySelectorAll(".nav-link");
+navlinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        alert("You clicked the " + link.innerHTML + " link ");
+        e.preventDefault();
+    })
+})
