@@ -33,3 +33,14 @@ images.forEach((image) => {
 document.addEventListener("dblclick", (e) => {
     alert("You clicked the document!");
 })
+
+//wheel event listener
+const logo_heading = document.querySelector(".logo-heading");
+const newEl = document.createElement("p");
+newEl.innerHTML = "Times Scrolled : ";
+logo_heading.after(newEl);
+let timesScrolled = 0;
+document.addEventListener("wheel", (e) => {
+    timesScrolled++;
+    newEl.innerHTML = `Times Scrolled : ${timesScrolled}`
+})
