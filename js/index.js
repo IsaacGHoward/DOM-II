@@ -73,3 +73,9 @@ images.forEach((image) => {
 document.addEventListener("copy", (e) => {
     alert("STOP STEALING OUR AUTO GENERATED TEXT!");
 })
+
+//resize
+window.addEventListener("resize", (e) => {
+    if(window.innerWidth < 400)
+        alert("MAKE THE WEBSITE BIGGER, THIS IS TOO SMALL!")
+})
